@@ -1,0 +1,168 @@
+html, body {
+	width: 100%;
+	min-height: 100%;
+	padding: 0px;
+	margin: 0px;
+	background: #CBC4CB;
+
+}
+
+* {
+	font-family: "Lucida Sans";
+}
+
+
+/* HEADER */
+#header {
+	position: fixed;
+	height: 8%;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	width: 98%;
+	padding: 1%;
+
+	background: #522D80;
+	box-shadow: 0px 10px 10px rgba(30, 30, 30, 0.5);
+}
+
+/* Title */
+#title {
+	flex: 1;
+	text-align: center;
+	padding: 10px;
+}
+
+#title h1 {
+	margin: auto;
+	color: white;
+	font-weight: bold;
+}
+
+/* Logo */
+#logo {
+	flex: 1;
+
+	align-content: left;
+	text-align: left;
+}
+
+#logo img {
+	height: 100%;
+	width:  auto;
+}
+
+/* Nav */
+#nav {
+	flex: 1;
+
+	display: flex;
+	content-align: right;
+	justify-content: space-between;
+	align-self: flex-end;
+
+	height: 50%;
+}
+
+.nav-item { 
+	color: white;
+	text-decoration: none;
+	align-self: end;
+
+	padding-right: 10px;
+	padding-left: 10px;
+
+	border-right: 3px solid #522D80;
+
+	transition: 1s;
+
+	cursor: pointer;
+}
+
+.nav-item:hover {
+	border-right: 3px solid white;
+	font-size: 20px;
+}
+
+
+
+
+
+/* BODY */
+
+#body {
+	max-width: 70%;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 10%;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+
+.body-cell {
+	width: 47%;
+	height: auto;
+	padding: 0px;
+
+	background: #B94700;
+
+
+	border-radius: 30px;
+	border: 4px solid grey;
+	margin-bottom: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	box-shadow: 0px 10px 10px rgba(30, 30, 30, 0.5);
+	transition: 1s;
+}
+
+.body-cell:hover {
+	box-shadow: 0px 20px 20px rgba(20, 20, 20, 0.6);
+}
+
+.full-width {
+	width: 100%;
+}
+
+.body-title {
+	width: 100%;
+
+	flex: 1;
+
+	text-align: center;
+}
+
+.body-title h1 {
+	font-weight: bold;
+	padding:  auto;
+	font-size: 30px;
+	color: white;
+}
+
+.body-content {
+	flex: 3;
+
+	background: #2E1A47;
+
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+
+	color: white;
+
+	padding: 10px;
+}
+
+.body-content p {
+	text-align: center;
+}
