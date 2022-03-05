@@ -4,9 +4,24 @@
 
 	<head>
 		<link rel="stylesheet" href = "static/css/global.css">
+		<link rel="stylesheet" href = "static/css/index.css">
 
 		<title> Kowalski Creative Inquiry </title>
 
+
+
+		<script>
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+			    document.getElementById("header").style.height = "6%";
+			  } else {
+			    document.getElementById("header").style.height = "14%";
+			  }
+			}
+		</script>
 	</head>
 
 	<body>
@@ -18,10 +33,11 @@
 
 
 			<div id = 'nav'>
-				<a class = 'nav-item'> Previous Work
-				<a class = 'nav-item'> Current Projects </a>
-				<a class = 'nav-item'> The Team </a>
-				<a class = 'nav-item'> Contact </a>
+				<a class = 'nav-item selected' href = ''> Home </a>
+				<a class = 'nav-item' href = 'prev_work'> Previous Work
+				<a class = 'nav-item' href = 'cur_work'> Current Projects </a>
+				<a class = 'nav-item' href = 'team'> The Team </a>
+				<a class = 'nav-item' href = 'contact'> Contact </a>
 			</div>
 
 		</div>
@@ -77,19 +93,6 @@
 				</div>
 			</div>
 		</div>
-
-		<script>
-
-		window.onscroll = function() {scrollFunction()};
-
-		function scrollFunction() {
-		  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-		    document.getElementById("header").style.height = "8%";
-		  } else {
-		    document.getElementById("header").style.height = "14%";
-		  }
-		}
-		</script>
 
 	</body>
 
